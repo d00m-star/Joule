@@ -1,0 +1,58 @@
+{
+  "foodList": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "type": "Fruit",
+      "calories": 90,
+      "protein": 1,
+      "fats": 0,
+      "carbohydrates": 23
+    },
+    {
+      "id": 2,
+      "name": "Banana",
+      "type": "Fruit",
+      "calories": 110,
+      "protein": 1,
+      "fats": 0,
+      "carbohydrates": 90
+    },
+    {
+      "id": 3,
+      "name": "Chicken",
+      "type": "Meat",
+      "calories": 160,
+      "protein": 32,
+      "fats": 6,
+      "carbohydrates": 0
+    },
+    {
+      "id": 4,
+      "name": "Beef",
+      "type": "Meat",
+      "calories": 208,
+      "protein": 35,
+      "fats": 8,
+      "carbohydrates": 0
+    },
+    {
+      "id": 5,
+      "name": "Spinach",
+      "type": "Vegetable",
+      "calories": 5,
+      "protein": 1,
+      "fats": 0,
+      "carbohydrates": 2
+    },
+    {
+      "id": 6,
+      "name": "Carrot",
+      "type": "Vegetable",
+      "calories": 12,
+      "protein": 1,
+      "fat": 0,
+      "carbohydrates": 5
+    }
+  ]
+}
