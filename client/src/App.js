@@ -1,7 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
-import foodList from './food.json'
+import data from './food.json'
 import { FoodData } from './components/FoodData'
 import { useState } from 'react'
 
@@ -16,7 +16,11 @@ function App() {
           <Route
             path="/"
             element={
-              <FoodData foodList={foodList} setFoods={setFoods} foods={foods} />
+              <FoodData
+                foodList={data.foodList}
+                setFoods={setFoods}
+                foods={foods}
+              />
             }
           />
           {/* <Route path='/foods' element={}/>
