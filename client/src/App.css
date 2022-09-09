@@ -1,38 +1,110 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  padding: 2px;
+  background-color: rgba(175, 175, 175, 0.5);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: aqua;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-links {
+  background-color: rgba(25, 25, 25);
+  border-top: 2px solid rgb(125, 125, 125);
+  border-left: 2px solid rgb(125, 125, 125);
+  border-right: 2px solid rgb(125, 125, 125);
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  height: 2em;
+  margin-bottom: -5px;
   text-align: center;
+  text-decoration: none;
+  width: 7em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-links:active {
+  color: aqua;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.day-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border: 2px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  background-color: rgb(25, 25, 25);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.day-data-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.day-data {
+  width:10em;
+  height: 8em;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px 40px 5px 10px;
+  margin: 2px;
+  background-color: rgb(70, 90, 75);
+  color:white;
+}
+
+
+.food-list-container {
+  display: flex;
+  /* border: 2px solid rgb(125, 125, 125); */
+  border-radius: 15px;
   color: white;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.food-data {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.food-items {
+  background-color: rgb(70, 90, 75);
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+  height: 9em;
+  width: 20em;
 }
+
+

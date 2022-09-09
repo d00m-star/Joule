@@ -6,13 +6,13 @@ const Header = () => {
       Joule
       <nav className="nav-links">
         <Link className="header-links" to="/">
-        ☀️
+        Daily☀️
         </Link>
         <Link className="header-links" to="/weeks">
-        📈
+         Weekly📈
         </Link>
         <Link className="header-links" to="/favorites">
-        ⭐
+        Favorites⭐ 
         </Link>
       </nav>
     </div>
