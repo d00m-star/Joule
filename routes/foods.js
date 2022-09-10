@@ -16,17 +16,21 @@ router.get('/:id', async function (req, res) {
 router.post('/', async function (req, res) {
   const { name, type } = req.body
   const food = await Food.create({ name, type })
-  res.json(food)
+  res.status(201).json(food)
 })
 
 router.put('/:id', async function (req, res) {
-  const food = await Food.update()
+  const { id } = req.params
+  const { name, type } = req.body
+  const food = await Food.findByPk(id)
+  await food.update({ name, type })
   res.json(food)
 })
 
 router.delete('/:id', async function (req, res) {
-  const food = await Food.delete()
-  res.json(food)
+  const { id } = req.params
+  const food = await Food.destroy({ where: { id } })
+  res.status(204).end()
 })
 
 module.exports = router
