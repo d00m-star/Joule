@@ -13,8 +13,16 @@ module.exports = (sequelize, DataTypes) => {
   }
   Food.init(
     {
-      name: DataTypes.STRING,
-      type: DataTypes.STRING,
+      name: {
+        type: DataTypes.STRING,
+        notEmpty: true,
+        allowNull: false
+      },
+      type: {
+        type: DataTypes.STRING,
+        notEmpty: true,
+        allowNull: false
+      },
       calories: DataTypes.INTEGER,
       protein: DataTypes.INTEGER,
       fats: DataTypes.INTEGER,
