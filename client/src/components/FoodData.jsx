@@ -3,37 +3,27 @@ import { useState } from "react"
 import { FoodList } from "./FoodList"
 
 export const FoodData = ({foodList, foods, setFoods}) => {
-  const [calories, setCalories] = useState([]) //foodData
-  const [protein, setProtein] = useState([]) //foodData
-  const [fats, setFats] = useState([]) //foodData
-  const [carbohydrates, setCarbohydrates] = useState([]) //foodData
-  const [totalCalories, setTotalCalories] = useState(null) //foodData
+  const [totalCalories, setTotalCalories] = useState(0) //foodData
+  const [totalPro, setTotalPro] = useState(0)
+  const [totalFats, setTotalFats] = useState(0)
+  const [totalCarbs, setTotalCarbs] = useState(0)
 
+  const sum = (propertyName) => foods.map(food => food[propertyName]).reduce((result, kcal) => result + kcal, 0)
   
 
-  let sumCalories= () => { calories.map((kcal) => { //sums the state array of calories
-    return sumCalories += kcal
-  })}
+  useEffect(() => {
+    // setTotalFats(sumFats())
+    // setTotalCarbs(sumCarbs())
+    // setTotalPro(sumProtein())
+    // setTotalCalories(sumCalories())
+    console.log('foodCals', sum("calories"))
+    console.log('foodCals', sum("fats"))
+    console.log('foodCals', sum("protein"))
+  }, [foods])
+  
+  
+  
 
-  let foodCals = () => foods.map(food => food.calories) //grabs calories from foods
-  let foodProtein = () => foods.map(food => food.protein) //grabs protein from foods
-  let foodFats = () => foods.map(food => food.fats) //grabs fats from foods
-  let foodCarbs = () => foods.map(food => food.carbohydrates) //grabs carbs from foods
-
-useEffect(() => {
-  setCalories(foodCals()) //set state of calories ..
-  setProtein(foodProtein()) //set state of protein
-  setFats(foodFats()) //set state of fats
-  setCarbohydrates(foodCarbs()) //set state of carbs
-  setTotalCalories(sumCalories()) //set state of total calories from sumCalories function
-}, [])
-
-console.log('sumCal', sumCalories)
-console.log('cal state', calories)
-console.log('total cal state', totalCalories)
-console.log('protein state', protein)
-console.log('carb state', carbohydrates)
-console.log('fat state', fats)
 
 
 
@@ -42,8 +32,8 @@ console.log('fat state', fats)
       <div className="data-data-container">
       {foods.map((food) => (
         <div className="day-data" key={food.id}>
-          <h3>{food.name}</h3>
-            <ul>
+          <h3>{food.name}<br></br>{food.calories}</h3>
+            <ul className="day-data-dropdown">
               <li>Type: {food.type}</li>
               <li>Calories: {food.calories}</li>
               <li>Protein: {food.protein}</li>
@@ -53,9 +43,12 @@ console.log('fat state', fats)
       </div>
       ))}
       </div>
+      <div className="data-display">
+        <div>{sum("fats")}</div>
+      </div>
     <div className="food-list-container">
       <div className="food-data">
-        <FoodList foodList={foodList} setFoods={setFoods} foods={foods} calories={calories} setCalories={setCalories}/></div>
+        <FoodList foodList={foodList} setFoods={setFoods} foods={foods} calories={totalCalories} setCalories={setTotalCalories}/></div>
       </div>
     </div>
   )

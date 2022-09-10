@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className="header">
-      Joule
+      <div className="title">
+      Joule 🔥
+      </div>
       <nav className="nav-links">
         <Link className="header-links" to="/">
         Daily☀️

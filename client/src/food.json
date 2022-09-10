@@ -51,7 +51,7 @@
       "type": "Vegetable",
       "calories": 12,
       "protein": 1,
-      "fat": 0,
+      "fats": 0,
       "carbohydrates": 5
     }
   ]
