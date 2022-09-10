@@ -1,9 +1,10 @@
 var express = require('express')
 var router = express.Router()
+const { Food } = require('../models')
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.json({ foo: 'bar' })
+router.get('/', async function (req, res, next) {
+  const foods = await Food.findAll()
+  res.json(foods)
 })
 
 module.exports = router
