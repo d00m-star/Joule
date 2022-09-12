@@ -10,23 +10,6 @@ export const FoodData = ({foodList, foods, setFoods}) => {
 
   const sum = (propertyName) => foods.map(food => food[propertyName]).reduce((result, kcal) => result + kcal, 0)
   
-
-  useEffect(() => {
-    // setTotalFats(sumFats())
-    // setTotalCarbs(sumCarbs())
-    // setTotalPro(sumProtein())
-    // setTotalCalories(sumCalories())
-    console.log('foodCals', sum("calories"))
-    console.log('foodCals', sum("fats"))
-    console.log('foodCals', sum("protein"))
-  }, [foods])
-  
-  
-  
-
-
-
-
   return (
     <div className="day-container">
       <div className="data-data-container">
