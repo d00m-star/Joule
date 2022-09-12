@@ -6,7 +6,7 @@ export const FoodData = ({foodList, foods, setFoods}) => {
   
   return (
     <div className="day-container">
-      <div className="data-data-container">
+      <div className="data-container">
       {foods.map((food) => (
         <div className="day-data" key={food.id}>
           <h3>{food.name}<br></br>{food.calories}</h3>

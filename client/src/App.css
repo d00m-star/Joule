@@ -75,21 +75,13 @@ button:active {
 
 
 .day-container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 2px solid rgb(125, 125, 125);
   border-radius: 20px;
   background-color: rgb(25, 25, 25);
   margin-top: -5px;
   padding: 10px 3px 0px 3px;
-}
-
-.day-data-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .day-data {
@@ -113,7 +105,8 @@ button:active {
 
 .food-list-container {
   display: flex;
-  /* border: 2px solid rgb(125, 125, 125); */
+  flex-direction: column;
+  align-items: flex-start;
   border-radius: 15px;
   color: white;
   margin: 5px;
