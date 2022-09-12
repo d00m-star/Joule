@@ -5,6 +5,7 @@ import data from './food.json'
 import { FoodData } from './components/FoodData'
 import { useState } from 'react'
 import Favorites from './components/Favorites'
+import WeekList from './components/WeekList'
 
 function App() {
   const [foods, setFoods] = useState([])
@@ -24,6 +25,7 @@ function App() {
               />
             }
           />
+          <Route path="/weeks" element={<WeekList />} />
           <Route path="/favorites" element={<Favorites foods={foods} />} />
         </Routes>
       </main>

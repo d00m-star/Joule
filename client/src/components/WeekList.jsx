@@ -1,5 +1,7 @@
-export const WeekList = () => {
+const WeekList = () => {
   return (
     <div>WeekList</div>
   )
 }
+
+export default WeekList
