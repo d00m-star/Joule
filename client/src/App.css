@@ -108,10 +108,6 @@ button:active {
   visibility: hidden;
 }
 
-
-
-
-
 .food-list-container {
   display: flex;
   /* border: 2px solid rgb(125, 125, 125); */
@@ -138,10 +134,26 @@ button:active {
 
 .favorite-container {
   color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border: 2px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  background-color: rgb(25, 25, 25);
+  margin-top: -5px;
+  padding: 10px 3px 0px 3px;
 }
 
 .week-container {
   color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border: 2px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  background-color: rgb(25, 25, 25);
+  margin-top: -5px;
+  padding: 10px 3px 0px 3px;
 }
 
 
