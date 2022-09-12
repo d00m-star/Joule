@@ -2,6 +2,12 @@ const express = require('express')
 const router = express.Router()
 const { Days } = require('../models')
 
+const errorMessages = (validationError) =>
+  validationError.errors.reduce((obj, error) => {
+    obj[error.path] = error.message
+    return obj
+  }, {})
+
 router.get('/', async function (req, res) {
   const days = await Days.findAll()
   res.json(days)
