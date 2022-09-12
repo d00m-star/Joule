@@ -8,7 +8,8 @@ GA-SEI Project Capstone - Joule (Calorie Tracker)
 
 [Instagram](https://www.instagram.com/the_alch3mys7/) |
 [Trello](https://trello.com/b/fqS0JaQv/joule) |
-[GitHub](https://github.com/d00m-star)
+[GitHub](https://github.com/d00m-star) |
+[Deployment](https://joule-ga.herokuapp.com/)
 
 ---
 
