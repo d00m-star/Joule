@@ -9,6 +9,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Food.hasMany(models.Favorites, {
+        foreignKey: 'favoritesId',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
+        as: 'favorites'
+      })
     }
   }
   Food.init(

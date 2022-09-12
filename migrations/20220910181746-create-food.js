@@ -30,6 +30,12 @@ module.exports = {
         type: Sequelize.INTEGER,
         defaultValue: 0
       },
+      favoritesId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE'
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

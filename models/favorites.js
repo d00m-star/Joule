@@ -9,12 +9,17 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Favorites.belongsTo(models.Food, {
+        foreignKey: 'foodId',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
+        as: 'food'
+      })
     }
   }
   Favorites.init(
     {
-      name: DataTypes.STRING,
-      favArray: DataTypes.ARRAY
+      foodId: DataTypes.INTEGER
     },
     {
       sequelize,
