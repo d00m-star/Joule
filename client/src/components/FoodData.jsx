@@ -18,14 +18,23 @@ export const FoodData = ({foodList, foods, setFoods}) => {
               <li>Type: {food.type}</li>
               <li>Calories: {food.calories}</li>
               <li>Protein: {food.protein}</li>
-              <li>Fats: {food.fats}</li>
               <li>Carbohydrates: {food.carbohydrates}</li>
             </ul> 
       </div>
       ))}
       </div>
       <div className="data-display">
-        <div>{sum("fats")}</div>
+        <div>
+          <ul>
+          <li>
+            Total Calories: {sum("calories")}
+            </li>
+            <li>Total Protein: {sum("protein")}</li>
+            <li>Total Carbs: {sum("carbohydrates")}</li>
+            <li>Total Fats: {sum("fats")}</li>
+
+          </ul>
+          </div>
       </div>
     <div className="food-list-container">
       <div className="food-data">
