@@ -4,9 +4,7 @@ import { FoodList } from "./FoodList"
 
 export const FoodData = ({foodList, foods, setFoods}) => {
   const [totalCalories, setTotalCalories] = useState(0) //foodData
-  const [totalPro, setTotalPro] = useState(0)
-  const [totalFats, setTotalFats] = useState(0)
-  const [totalCarbs, setTotalCarbs] = useState(0)
+
 
   const sum = (propertyName) => foods.map(food => food[propertyName]).reduce((result, kcal) => result + kcal, 0)
   
