@@ -2,6 +2,12 @@ const express = require('express')
 const router = express.Router()
 const { Favorites } = require('../models')
 
+const errorMessages = (validationError) =>
+  validationError.errors.reduce((obj, error) => {
+    obj[error.path] = error.message
+    return obj
+  }, {})
+
 router.get('/', async function (req, res) {
   const favorites = await Favorites.findAll()
   res.json(favorites)
