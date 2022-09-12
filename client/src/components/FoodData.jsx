@@ -18,6 +18,7 @@ export const FoodData = ({foodList, foods, setFoods}) => {
               <li>Type: {food.type}</li>
               <li>Calories: {food.calories}</li>
               <li>Protein: {food.protein}</li>
+              <li>Fats: {food.fats}</li>
               <li>Carbohydrates: {food.carbohydrates}</li>
             </ul> 
       </div>
@@ -25,6 +26,7 @@ export const FoodData = ({foodList, foods, setFoods}) => {
       </div>
       <div className="data-display">
         <div>
+          <h3 className="total-title">Today's Nutritional Data</h3>
           <ul>
           <li>
             Total Calories: {sum("calories")}
