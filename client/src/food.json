@@ -6,7 +6,7 @@
       "type": "Fruit",
       "calories": 90,
       "protein": 1,
-      "fats": 0,
+      "fats": 1,
       "carbohydrates": 23
     },
     {
@@ -15,7 +15,7 @@
       "type": "Fruit",
       "calories": 110,
       "protein": 1,
-      "fats": 0,
+      "fats": 1,
       "carbohydrates": 90
     },
     {
@@ -42,7 +42,7 @@
       "type": "Vegetable",
       "calories": 5,
       "protein": 1,
-      "fats": 0,
+      "fats": 1,
       "carbohydrates": 2
     },
     {
@@ -51,7 +51,7 @@
       "type": "Vegetable",
       "calories": 12,
       "protein": 1,
-      "fats": 0,
+      "fats": 1,
       "carbohydrates": 5
     }
   ]
