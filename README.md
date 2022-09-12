@@ -35,20 +35,22 @@ Joule, Your Daily Calorie Tracker!
 
 ## **_Getting Started_**
 
-
+Simply Create or Add foods to your daily tracker under the day tab.
+Continue to add your days to the week tab for a more compiled overhead view of nutritional data.
 
 
 ---
 
 ## **_Diagrams_**
 
-
+[ERD](/public/images/JouleERD.png)
+[CHD](/public/images/JouleCHD.png)
 
 ---
 
 ## **_Screenshots_**
 
-
+[Screenshot](/public/images/JouleScreen.png)
 
 ---
 
