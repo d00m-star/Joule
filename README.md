@@ -61,7 +61,7 @@ Continue to add your days to the week tab for a more compiled overhead view of n
 
 - [x] something that works
 - [ ] cleaner UI
-- [ ] review section
+- [ ] reclaim sanity
 
 ---
 

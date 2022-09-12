@@ -11,7 +11,7 @@ const Header = () => {
         Daily☀️
         </Link>
         <Link className="header-links" to="/weeks">
-         Weekly📈
+        Weekly📈
         </Link>
         <Link className="header-links" to="/favorites">
         Favorites⭐ 

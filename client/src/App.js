@@ -24,6 +24,7 @@ function App() {
   useEffect(() => {
     setDays(foods)
   }, [foods])
+
   return (
     <div className="App">
       <Header />
