@@ -7,7 +7,6 @@ GA-SEI Project Capstone - Joule (Calorie Tracker)
 ### By: John Dunn
 
 [Instagram](https://www.instagram.com/the_alch3mys7/) |
-[Facebook](https://www.facebook.com/chimp.slap/) |
 [Trello](https://trello.com/b/fqS0JaQv/joule) |
 [GitHub](https://github.com/d00m-star)
 
