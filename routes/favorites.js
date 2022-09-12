@@ -9,8 +9,8 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const favorites = await Favorites.findAll()
-  res.json(favorites)
+  const favorite = await Favorites.findAll()
+  res.json(favorite)
 })
 
 router.delete('/:id', async function (req, res) {
