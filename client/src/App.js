@@ -4,6 +4,7 @@ import Header from './components/Header'
 import data from './food.json'
 import { FoodData } from './components/FoodData'
 import { useState } from 'react'
+import Favorites from './components/Favorites'
 
 function App() {
   const [foods, setFoods] = useState([])
@@ -23,9 +24,7 @@ function App() {
               />
             }
           />
-          {/* <Route path='/foods' element={}/>
-          <Route path='/weeks' element={}/>
-          <Route path='/days' element={}/> */}
+          <Route path="/favorites" element={<Favorites foods={foods} />} />
         </Routes>
       </main>
     </div>

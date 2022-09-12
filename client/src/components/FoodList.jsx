@@ -1,4 +1,4 @@
-export const FoodList = ({foodList, foods, setFoods, calories, setCalories}) => {
+export const FoodList = ({foodList, foods, setFoods}) => {
 
   
   
