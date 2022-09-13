@@ -14,7 +14,7 @@ router.get('/', async function (req, res) {
   res.json(favorite)
 })
 
-router.post('/', async function (req, res) {
+router.post('/favorites', async function (req, res) {
   const { name } = req.body
   try {
     const favorites = await Favorites.create({ name })
