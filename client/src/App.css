@@ -129,6 +129,7 @@ button:active {
   background-color: rgb(70, 90, 75);
   margin: 2px;
   padding: 5px;
+  border: 1px solid white;
   border-radius: 10px;
   height: 9em;
   width: 30vw;
