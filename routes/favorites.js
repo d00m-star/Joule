@@ -9,7 +9,7 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const favorite = await Favorites.findAll()
+  const favorite = await Favorite.findAll()
   res.json(favorite)
 })
 

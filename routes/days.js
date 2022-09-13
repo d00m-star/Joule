@@ -9,7 +9,7 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const days = await Days.findAll()
+  const days = await Day.findAll()
   res.json(days)
 })
 
