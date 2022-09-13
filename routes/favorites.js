@@ -14,6 +14,19 @@ router.get('/', async function (req, res) {
   res.json(favorite)
 })
 
+router.post('/', async function (req, res) {
+  const { name } = req.body
+  try {
+    const favorites = await Favorites.create({ name })
+    res.status(201).json(favorites)
+  } catch (e) {
+    if (e instanceof ValidationError) {
+      res.status(422).json(errorMessages(e))
+    }
+    res.status(500).end()
+  }
+})
+
 router.delete('/:id', async function (req, res) {
   const { id } = req.params
   const favorite = await Favorites.destroy({ where: { id } })
