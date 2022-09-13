@@ -24,6 +24,10 @@ li {
   list-style-type: none;
 }
 
+h3 {
+  background-color: rgb(70, 90, 75);
+}
+
 button {
   color: white;
   font-size: 1em;
@@ -153,6 +157,10 @@ button:active {
 }
 
 .day-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
