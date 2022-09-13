@@ -97,12 +97,16 @@ button:active {
   font-size: 12px;
   padding: 5px 40px 5px 10px;
   margin: 2px;
-  background-color: rgb(70, 90, 75);
+  background-color: black;
   color:white;
   cursor: pointer;
   position: relative;
   display: inline-block;
   user-select: none;
+}
+
+.day-data > h3 {
+  background-color: black;
 }
 
 .day-data-dropdown {
