@@ -9,18 +9,18 @@ const errorMessages = (validationError) =>
     return obj
   }, {})
 
-router.get('/', async function (req, res) {
+router.get('/weeks', async function (req, res) {
   const weeks = await Week.findAll()
   res.json(weeks)
 })
 
-router.get('/:id', async function (req, res) {
+router.get('/weeks/:id', async function (req, res) {
   const { id } = req.params
   const week = await Week.findByPk(id)
   res.json(week)
 })
 
-router.post('/', async function (req, res) {
+router.post('/weeks', async function (req, res) {
   const { name } = req.body
   try {
     const week = await Week.create({ name })
@@ -33,7 +33,7 @@ router.post('/', async function (req, res) {
   }
 })
 
-router.put('/:id', async function (req, res) {
+router.put('/weeks/:id', async function (req, res) {
   const { id } = req.params
   const { name } = req.body
   try {
@@ -49,7 +49,7 @@ router.put('/:id', async function (req, res) {
   }
 })
 
-router.delete('/:id', async function (req, res) {
+router.delete('/weeks/:id', async function (req, res) {
   const { id } = req.params
   const week = await Week.destroy({ where: { id } })
   res.status(204).end()
