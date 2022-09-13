@@ -1,11 +1,11 @@
 const WeekList = ({days}) => {
   return (
-    <div className="day-list-container">
+    <div className="week-list-container">
       <p>You only have this day to lose weight.</p>
-    <div className="day-list">
+    <div className="week-list">
       {days.map((day) => (
-        <div className='day-items' key={day.id}>
-          <h3>{day.name} - {day.calories}</h3>
+        <div className='week-items' key={day.id}>
+          {day.name} - {day.calories}
           </div>
       ))}
     </div>
