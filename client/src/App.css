@@ -126,7 +126,7 @@ button:active {
 }
 
 .food-items {
-  background-color: rgb(70, 90, 75);
+  background-color: black;
   margin: 2px;
   padding: 5px;
   border: 1px solid white;
