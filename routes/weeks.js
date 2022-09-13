@@ -10,7 +10,7 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/weeks', async function (req, res) {
-  const weeks = await Week.findAll()
+  const weeks = await Week.findAll({})
   res.json(weeks)
 })
 

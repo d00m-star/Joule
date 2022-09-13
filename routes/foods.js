@@ -10,7 +10,7 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const foods = await Food.findAll()
+  const foods = await Food.findAll({})
   res.json(foods)
 })
 
