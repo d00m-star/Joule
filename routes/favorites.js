@@ -9,13 +9,13 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const favorite = await Favorite.findAll()
+  const favorite = await Favorites.findAll()
   res.json(favorite)
 })
 
 router.delete('/:id', async function (req, res) {
   const { id } = req.params
-  const favorite = await Favorite.destroy({ where: { id } })
+  const favorite = await Favorites.destroy({ where: { id } })
   res.status(204).end()
 })
 
@@ -23,7 +23,7 @@ router.put('/:id', async function (req, res) {
   const { id } = req.params
   const { name } = req.body
   try {
-    const favorite = await Favorite.findByPk(id)
+    const favorite = await Favorites.findByPk(id)
     await favorite.update({ name, type })
     res.json(favorite)
   } catch (e) {

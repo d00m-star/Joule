@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Favorites.belongsTo(models.Food, {
+      Favorites.hasMany(models.Food, {
         foreignKey: 'foodId',
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',

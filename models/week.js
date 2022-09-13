@@ -9,6 +9,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Week.hasMany(models.Day, {
+        foreignKey: 'dayId',
+        onDelete: 'CASCADE',
+        onUpdate: 'CASCADE',
+        as: 'days'
+      })
     }
   }
   Week.init(

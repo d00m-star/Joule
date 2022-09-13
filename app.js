@@ -20,6 +20,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/foods', foodRouter)
 app.use('/favorites', favoriteRouter)
+app.use('/weeks', weekRouter)
+app.use('/days', dayRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
