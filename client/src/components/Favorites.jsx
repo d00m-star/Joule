@@ -1,18 +1,14 @@
 const Favorites = ({foods}) => {
   return (
-    <div className="food-list-container">
-      <div className="food-list">
+    <div className="favorite-list-container">
+      <div className="favorite-list">
         {foods.map((food) => (
-          <div className='food-items' key={food.id}>
+          <div className='favorite-items' key={food.id}>
             <h3>{food.name}</h3>
-            <div className="food-dropdown">
-            <ul>
-              <li>Calories: {food.calories}</li>
-              <li>Protein: {food.protein}</li>
-              <li>Fats: {food.fats}</li>
-              <li>Carbohydrates: {food.carbohydrates}</li>
-            </ul>
-            </div>
+              <p>Calories: {food.calories}</p>
+              <p>Protein: {food.protein}</p>
+              <p>Fats: {food.fats}</p>
+              <p>Carbohydrates: {food.carbohydrates}</p>
             </div>
         ))}
       </div>

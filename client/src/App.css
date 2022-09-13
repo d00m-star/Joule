@@ -26,6 +26,7 @@ li {
 
 h3 {
   background-color: rgb(70, 90, 75);
+  border-radius: 7px;
 }
 
 button {
@@ -154,6 +155,7 @@ button:active {
   background-color: rgb(25, 25, 25);
   margin-top: -5px;
   padding: 10px 3px 0px 3px;
+  height: 95vh;
 }
 
 .week-items {
@@ -162,6 +164,7 @@ button:active {
   background-color: rgb(70, 90, 75);
   margin: 2px;
   width: 10em;
+  height: auto;
 }
 
 .day-list {
@@ -190,4 +193,23 @@ button:active {
 
 .total-title {
   text-decoration: underline;
+}
+
+.favorite-list-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(125, 125, 125);
+  border-radius: 20px;
+  background-color: rgb(25, 25, 25);
+  margin-top: -5px;
+  padding: 10px 3px 0px 3px;
+  height: 95vh;
+}
+
+.favorite-items {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 2px;
 }
