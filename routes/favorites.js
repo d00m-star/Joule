@@ -1,6 +1,6 @@
-var express = require('express')
+const express = require('express')
 const { ValidationError } = require('sequelize')
-var router = express.Router()
+const router = express.Router()
 const { Favorites } = require('../models')
 
 const errorMessages = (validationError) =>
@@ -29,7 +29,7 @@ router.post('/favorites', async function (req, res) {
 
 router.delete('/:id', async function (req, res) {
   const { id } = req.params
-  const favorite = await Favorites.destroy({ where: { id } })
+  await Favorites.destroy({ where: { id } })
   res.status(204).end()
 })
 

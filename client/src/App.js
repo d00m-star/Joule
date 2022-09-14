@@ -16,7 +16,7 @@ function App() {
       type: 'Fruit',
       calories: 5,
       protein: 1,
-      fat: 0,
+      fat: 1,
       carbohydrates: 10
     }
   ])

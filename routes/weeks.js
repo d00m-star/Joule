@@ -1,6 +1,6 @@
-var express = require('express')
+const express = require('express')
 const { ValidationError } = require('sequelize')
-var router = express.Router()
+const router = express.Router()
 const { Week } = require('../models')
 
 const errorMessages = (validationError) =>

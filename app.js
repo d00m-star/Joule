@@ -1,13 +1,13 @@
-var createError = require('http-errors')
-var express = require('express')
-var path = require('path')
-var cookieParser = require('cookie-parser')
-var logger = require('morgan')
+const createError = require('http-errors')
+const express = require('express')
+const path = require('path')
+const cookieParser = require('cookie-parser')
+const logger = require('morgan')
 
-var foodRouter = require('./routes/foods')
-var favoriteRouter = require('./routes/favorites')
-var weekRouter = require('./routes/weeks')
-var app = express()
+const foodRouter = require('./routes/foods')
+const favoriteRouter = require('./routes/favorites')
+const weekRouter = require('./routes/weeks')
+const app = express()
 
 const PORT = process.env.PORT || 3001
 

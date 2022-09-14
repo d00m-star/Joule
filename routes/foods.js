@@ -1,6 +1,6 @@
-var express = require('express')
+const express = require('express')
 const { ValidationError } = require('sequelize')
-var router = express.Router()
+const router = express.Router()
 const { Food } = require('../models')
 
 const errorMessages = (validationError) =>
@@ -10,8 +10,8 @@ const errorMessages = (validationError) =>
   }, {})
 
 router.get('/', async function (req, res) {
-  const foods = await Food.findAll({})
-  res.json(foods)
+  // const foods = await Food.findAll({})
+  res.send('yes this works')
 })
 
 router.get('/:id', async function (req, res) {
